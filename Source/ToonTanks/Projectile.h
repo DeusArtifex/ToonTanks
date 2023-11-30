@@ -22,6 +22,8 @@ protected:
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadonly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UStaticMeshComponent* ProjectileMesh;
+	UPROPERTY(VisibleAnywhere, Category = "Movement")
+	class UProjectileMovementComponent* ProjectileMovement;
 
 public:	
 	// Called every frame
