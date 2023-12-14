@@ -25,6 +25,11 @@ ABasePawn::ABasePawn()
 	ProjectileSpawnPoint->SetupAttachment(TurretMesh);
 }
 
+void ABasePawn::HandleDestruction()
+{
+	//All effects related to pawn destruction
+}
+
 void ABasePawn::RotateTurret(FVector RotationTarget)
 {
 	FVector ToTarget = RotationTarget - TurretMesh->GetComponentLocation();
